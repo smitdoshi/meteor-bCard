@@ -7,8 +7,12 @@ Template.newForm.events({
 		let quote= template.find('#quote').value;
 		let gender= template.find('#gender').value;
 		let githubLink= template.find('#githubLink').value;
-
 		
+		Session.set('firstName', firstName);
+		Session.set('lastName', lastName);
+		Session.set('quote', quote);
+		Session.set('githubLink', githubLink);
+
 		Router.go(`/${firstName}`);
-	}
+
 });
