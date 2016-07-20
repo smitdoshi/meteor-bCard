@@ -9,5 +9,11 @@ Template.newForm.events({
 		let githubLink= template.find('#githubLink').value;
 
 		console.log(firstName);
-	}
+		Session.set('firstName', firstName);
+		Session.set('lastName', lastName);
+		Session.set('quote', quote);
+		Session.set('githubLink', githubLink);
+
+		Router.go(`/${firstName}`);
+	}	
 });
