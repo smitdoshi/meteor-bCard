@@ -8,6 +8,7 @@ Template.newForm.events({
 		let gender= template.find('#gender').value;
 		let githubLink= template.find('#githubLink').value;
 
-		console.log(firstName);
+		
+		Router.go(`/${firstName}`);
 	}
 });
