@@ -14,5 +14,5 @@ Template.newForm.events({
 		Session.set('githubLink', githubLink);
 
 		Router.go(`/${firstName}`);
-
+	}
 });
